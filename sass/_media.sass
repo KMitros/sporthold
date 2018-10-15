@@ -1,0 +1,152 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 500px)
+	
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	.main-head
+		.top-line
+			text-align: center
+			.contacts
+				margin-bottom: 10px
+			.select-wrap
+				margin-bottom: 10px
+	.article-top
+		> .article
+			position: absolute
+			top: 20%
+			left: 11%
+	.prev-sect
+		.prev-card
+			> .text
+				width: 45%
+				p
+					display: none
+			&.-bottom
+				> .text
+					width: 40%
+
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 425px)
+	.prev-sect
+		.prev-card.-left,.prev-card.-right
+			> .text
+				width: 40%
+				top: 20%
+				p
+					display: block
+	.blog-sect
+		.blog-card
+			margin-bottom: 2rem
+	.email-sect
+		.capt-text
+			> .head
+				margin-bottom: 2rem		
+		.email-form
+			line-height: 3rem
+
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	.article-top
+		background-position: 40% 0
+	.main-head
+		.select-wrap
+      		float: right
+		.contacts
+			float: left
+	.prev-card.-bottom
+		> .text
+			p
+				display: block
+	
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	.user-menu
+		.menu
+			> li
+				margin: 0px
+	.article-top
+		background-position: 60% 0
+	.prev-card.-bottom
+		>.text
+			p
+                margin-top: 40px
+	.email-sect
+		padding-top: 3rem
+		.email-form
+			padding-top: 10px
+
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1440px)
+	.item-left,.item-right,.item-bottom
+		p
+			display: block
+	.article-top
+		> .article
+			top: 20%
+			left: 20%
+	
+	
+	/**/

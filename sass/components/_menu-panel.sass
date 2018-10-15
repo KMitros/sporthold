@@ -1,0 +1,23 @@
+.menu-panel
+    font-size: 16px
+    text-align: center
+    > menu
+        list-style: none
+        padding: 0
+        margin: 0
+    &.-mainmenu
+        .menu
+            > li
+                display: inline-block
+                margin: 0 15px
+                > a
+                    display: block
+                    color: $mainfont-col
+                    transition: all .3s ease
+                    &:hover
+                        transform: scale(1.2)
+                        box-shadow: 3px 4px $ondark-col
+                        text-decoration: none
+    &.-top
+        margin: 20px auto
+

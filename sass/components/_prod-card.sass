@@ -1,0 +1,95 @@
+.prod-card
+    position: relative
+    width: 100%
+    margin-bottom: 22px
+    > .img
+        position: relative
+        width: 100%
+        transition: all .5 ease-in-out
+        img
+            width: 100%
+        > .quick-view
+            position: absolute
+            bottom: 60px
+            left: 0
+            opacity: 0
+            width: 100%
+            font-size: 1.3em
+            text-align: center
+            background-color: $white-col
+            transition: all .5s ease
+            > .fa
+                padding: 15px
+                transition: all .5s ease
+                &:hover
+                    color: $sec-acs-col
+        .hot,.new,.sale
+            display: none
+    > .descr
+        letter-spacing: .1em
+        > .price
+            font-size: 1.1em
+            font-weight: bold
+        > h5
+            font-family: "RobotoLight", serif
+            font-size: .9em
+        > .old-price
+            display: inline-block
+            color: $secfont-col
+            font-size: .8em
+            text-decoration: line-through
+    > 
+
+    &:hover
+        .quick-view
+            opacity: 1
+
+    &.-hot
+        > .img
+            > .hot
+                position: absolute
+                top: 8px
+                right: -6px
+                display: block
+                padding: 5px 10px
+                transform: rotate(90deg)
+                background-color: $hot-bg
+                color: $hot-font
+                font-family: "RobotoBold",sans-serif
+                font-size: 12px
+                text-transform: uppercase
+                
+    &.-sale
+        > .img
+            .sale
+                position: absolute
+                top: 10px
+                left: 21px
+                transform: rotate(90deg)
+                display: block
+                padding: 5px 10px
+                background-color: $sec-acs-col
+                color: $white-col
+                font-family: "RobotoBold"
+                font-size: 12px
+                text-transform: uppercase
+
+    &.-new
+        > .img
+            .new
+                position: absolute
+                top: 9px
+                left: -7px
+                display: block
+                padding: 5px 10px
+                transform: rotate(90deg)
+                background-color: $main-acs-col
+                font-family: "RobotoBold", serif
+                font-size: 12px
+                text-transform: uppercase
+                color: $white-col
+                
+
+
+
+    

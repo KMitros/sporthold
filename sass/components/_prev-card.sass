@@ -1,0 +1,51 @@
+.prev-card
+    position: relative
+    width: 100%
+    > .bg-img
+        max-width: 100%
+        height: auto
+        > img
+            width: 100%
+    > .text
+        text-transform: uppercase
+        font-family: "OpenSansExtraBold" ,serif
+        line-height: 1.6rem
+        p
+            display: none
+            margin-top: 13px
+            margin-bottom: 1rem
+            font-family: "OpenSansLight", serif
+            font-size: 12px
+            text-transform: none
+            color: $secfont-col
+        h2
+            font-size: 26px
+            color: #000
+            margin-bottom: 13px
+    
+    &.-left
+        margin-bottom: 20px
+        color: $sec-acs-col
+        text-align: right
+        > .text
+            width: 30%
+            position: absolute
+            top: 10%
+            right: 10%
+    &.-right
+        margin-bottom: 20px
+        text-align-last: left
+        color: $main-acs-col
+        > .text
+            width: 30%
+            position: absolute
+            top: 10%
+            left: 10%
+    &.-bottom
+        text-align-last: 
+        color: $main-acs-col
+        > .text
+            width: 37%
+            position: absolute
+            top: 10%
+            left: 10%
