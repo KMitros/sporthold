@@ -2336,7 +2336,7 @@
 .logo {
   width: 100px;
   position: relative; }
-  .logo > img {
+  .logo > .img {
     display: block;
     max-width: 100%;
     height: auto; }
@@ -2354,12 +2354,12 @@
     margin: 0; }
     @media only screen and (min-width: 320px) {
       .logo.-top {
-        margin: 20px auto; } }
+        margin: 50px auto; } }
 
 .menu-panel {
   font-size: 16px;
   text-align: center; }
-  .menu-panel > menu {
+  .menu-panel > .menu {
     list-style: none;
     padding: 0;
     margin: 0; }
@@ -2386,7 +2386,7 @@
   .prev-card > .bg-img {
     max-width: 100%;
     height: auto; }
-    .prev-card > .bg-img > img {
+    .prev-card > .bg-img > .img {
       width: 100%; }
   .prev-card > .text {
     text-transform: uppercase;
@@ -2521,7 +2521,7 @@
   appearance: none;
   background-color: #31353d;
   border: none;
-  color: #fff;
+  color: #ffffff;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -2585,7 +2585,7 @@ body {
 .article-top {
   position: relative;
   height: 630px;
-  color: #31415c;
+  color: #31353d;
   text-align: left;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
